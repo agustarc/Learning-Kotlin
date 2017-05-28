@@ -12,4 +12,8 @@ class DefiningTest {
     @Test fun testSum() {
         assertEquals(12, sum(10, 2))
     }
+
+    @Test fun testSum2() {
+        assertEquals(10, sum2(5, 5))
+    }
 }
