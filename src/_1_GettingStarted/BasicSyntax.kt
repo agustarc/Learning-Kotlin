@@ -88,4 +88,21 @@ fun nullSafety(a: String?): Int? {
     return a?.length
 }
 
+fun smartCast(x: Any): Int? {
+    if (x is String) {
+        return x.length
+    }
+
+    return null
+}
+
+fun smartCast2(x: Any): Int? {
+    when(x) {
+        is Int -> return x
+        is String -> return x.length
+        is IntArray -> return x.sum()
+        else -> return null
+    }
+}
+
 

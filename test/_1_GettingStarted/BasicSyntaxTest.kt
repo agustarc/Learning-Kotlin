@@ -51,5 +51,16 @@ class BasicSyntaxTest {
         assertEquals(null, nullSafety(null))
         assertEquals(2, nullSafety("Hi"))
     }
+
+    @Test fun smartCastTest() {
+        assertEquals(null, smartCast(10))
+        assertEquals(2, smartCast("Hi"))
+    }
+
+    @Test fun smartCast2Test() {
+        assertEquals(1, smartCast2(1))
+        assertEquals(2, smartCast2("Hi"))
+        assertEquals(6, smartCast2(intArrayOf(1, 2, 3)))
+    }
 }
 
