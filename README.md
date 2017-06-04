@@ -8,7 +8,7 @@ https://kotlinlang.org/docs/reference/
 
 # Getting Started
 
-To explain basic syntax, idioms and coding conventions.
+To explain basic syntax, defining functions, idioms and coding conventions.
 
 # Basics
 
