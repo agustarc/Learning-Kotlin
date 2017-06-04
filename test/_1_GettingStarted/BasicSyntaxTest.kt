@@ -46,5 +46,10 @@ class BasicSyntaxTest {
         assertEquals(true, whenExpression5("prefix"))
         assertEquals(false, whenExpression5("empty"))
     }
+
+    @Test fun nullSafetyTest() {
+        assertEquals(null, nullSafety(null))
+        assertEquals(2, nullSafety("Hi"))
+    }
 }
 

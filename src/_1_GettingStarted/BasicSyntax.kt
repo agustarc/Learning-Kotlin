@@ -84,4 +84,8 @@ fun whenExpression5(x: Any) = when(x) {
     else -> false
 }
 
+fun nullSafety(a: String?): Int? {
+    return a?.length
+}
+
 
