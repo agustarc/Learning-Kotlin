@@ -4,6 +4,11 @@ package _1_GettingStarted
  *  @author Leopold Baik
  *  https://github.com/joongwon
  */
+fun main(args: Array<String>) {
+    printSum(1, 2)
+    printSum2(3, 4)
+}
+
 fun simple(a: Int, b: Int): Int {
     return a + b
 }
