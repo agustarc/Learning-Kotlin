@@ -105,4 +105,28 @@ fun smartCast2(x: Any): Int? {
     }
 }
 
+fun forLoop(a: IntArray, match: Int): Boolean {
+    for (i: Int in a) {
+        if (i == match) {
+            return true
+        }
+    }
+
+    return false
+}
+
+fun forLoop2(a: IntArray, match: Int): Boolean {
+    return a.find { i: Int -> i == match } != null
+}
+
+fun forLoop3(a: IntArray, idx: Int): Int {
+    for ((index, value) in a.withIndex()) {
+        if (index == idx) {
+            return value
+        }
+    }
+
+    return 0
+}
+
 

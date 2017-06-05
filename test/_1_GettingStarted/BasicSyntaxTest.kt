@@ -62,5 +62,20 @@ class BasicSyntaxTest {
         assertEquals(2, smartCast2("Hi"))
         assertEquals(6, smartCast2(intArrayOf(1, 2, 3)))
     }
+
+    @Test fun forLoopTest() {
+        assertEquals(true, forLoop(intArrayOf(1, 2, 3), 2))
+        assertEquals(false, forLoop(intArrayOf(1, 2, 3), 5))
+    }
+
+    @Test fun forLoop2Test() {
+        assertEquals(true, forLoop2(intArrayOf(1, 2, 3), 2))
+        assertEquals(false, forLoop2(intArrayOf(1, 2, 3), 5))
+    }
+
+    @Test fun forLoop3Test() {
+        assertEquals(1, forLoop3(intArrayOf(1, 2, 3), 0))
+        assertEquals(3, forLoop3(intArrayOf(1, 2, 3), 2))
+    }
 }
 
