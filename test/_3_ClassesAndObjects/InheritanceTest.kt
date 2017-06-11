@@ -23,4 +23,5 @@ class InheritanceTest {
         val child: ParentClass = ChildClass("Leo")
         Assert.assertEquals("Child : Leo", child.generate())
     }
+
 }
