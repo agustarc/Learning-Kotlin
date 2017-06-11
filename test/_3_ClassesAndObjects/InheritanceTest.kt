@@ -10,17 +10,17 @@ import org.junit.Test
 class InheritanceTest {
 
     @Test fun parentTest() {
-        val parent: Inheritance = Inheritance("Leo")
+        val parent: SuperClass = SuperClass("Leo")
         Assert.assertEquals("Super : Leo", parent.generate())
     }
 
     @Test fun childTest() {
-        val child: Inheritance.Subclass = Inheritance.Subclass("Leo")
+        val child: SubClass = SubClass("Leo")
         Assert.assertEquals("Child : Leo", child.generate())
     }
 
     @Test fun typeTest() {
-        val child: Inheritance = Inheritance.Subclass("Leo")
+        val child: SuperClass = SubClass("Leo")
         Assert.assertEquals("Child : Leo", child.generate())
     }
 

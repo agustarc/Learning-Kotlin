@@ -10,8 +10,8 @@ import org.junit.Test
 class AnyTest {
     // refer to https://kotlinlang.org/docs/reference/java-interop.html#object-methods
     @Test fun anyTest() {
-        val any1: Common = Common()
-        val any2: Common = Common()
+        val any1: AnyType = AnyType()
+        val any2: AnyType = AnyType()
         Assert.assertFalse(any1 == any2)
         Assert.assertTrue(any1.javaClass == any2.javaClass)
     }
