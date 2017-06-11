@@ -37,6 +37,7 @@ class LearnField {
     // If you need to change the visibility of an accessor or to annotate it,
     // but don't need to change the default implementation,
     // you can define the accessor without defining its body
+    @Suppress("unused")
     var privateSetter: String = ""
         private set
 
@@ -44,6 +45,7 @@ class LearnField {
 
     lateinit var lazyVar: String
 
+    @Suppress("unused")
     fun lazy() {
         lazyVar = "Lazy init"
     }

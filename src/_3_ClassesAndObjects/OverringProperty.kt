@@ -24,7 +24,9 @@ interface Base {
     val count: Int
 }
 
+@Suppress("unused")
 class InterfaceProperty(override val count: Int) : Base
+@Suppress("unused")
 class InterfaceProperty2 : Base {
     override val count: Int = 20
 }

@@ -35,3 +35,32 @@ interface PropertyInterface {
 }
 
 class PropertyClass(override val value: Int) : PropertyInterface
+
+// When we declare many types in our supertype list,
+// it may appear that we inherit more than one implementation of the same method.
+interface A {
+    fun foo() {
+        print("A")
+    }
+}
+
+interface B {
+    fun foo() {
+        print("B")
+    }
+}
+
+@Suppress("unused")
+class C : A {
+    override fun foo() {
+        print("C")
+    }
+}
+
+@Suppress("unused")
+class D : A, B {
+    override fun foo() {
+        super<A>.foo()
+        super<B>.foo()
+    }
+}
