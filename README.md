@@ -13,6 +13,7 @@ To explain basic syntax, defining functions, idioms and coding conventions.
 # Basics
 
 # Classes and Objects
+To explain differences between java classes and kotlin classes and how to use kotlin classes.
 
 # Functions and Lambdas
 
