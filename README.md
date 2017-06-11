@@ -13,6 +13,13 @@ To explain basic syntax, defining functions, idioms and coding conventions.
 # Basics
 
 # Classes and Objects
+To explain differences between java classes and kotlin classes and how to use kotlin classes.
+
+Refer to
+
+https://kotlinlang.org/docs/reference/java-interop.html#object-methods
+
+https://kotlinlang.org/docs/reference/java-to-kotlin-interop.html
 
 # Functions and Lambdas
 
