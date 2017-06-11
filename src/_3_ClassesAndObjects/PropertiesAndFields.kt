@@ -41,4 +41,10 @@ class LearnField {
         private set
 
     @Deprecated(DEPRECATED_MESSAGE) fun constVal() {}
+
+    lateinit var lazyVar: String
+
+    fun lazy() {
+        lazyVar = "Lazy init"
+    }
 }

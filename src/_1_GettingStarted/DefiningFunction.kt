@@ -14,11 +14,11 @@ fun simple(a: Int, b: Int): Int {
 }
 
 fun printSum(a: Int, b: Int): Unit {
-    println("simple of $a and $b is ${a + b}")
+    println("getMessage of $a and $b is ${a + b}")
 }
 
 fun printSum2(a: Int, b: Int) {
-    println("simple of $a and $b is ${a + b}")
+    println("getMessage of $a and $b is ${a + b}")
 }
 
 infix fun Int.shl(a: Int): Int {

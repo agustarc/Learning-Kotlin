@@ -29,7 +29,7 @@ fun mutableVariable() {
 
 fun stringTemplates() {
     var a = 1
-    // simple name in template:
+    // getMessage name in template:
     val s1 = "a is $a"
 
     a = 2
