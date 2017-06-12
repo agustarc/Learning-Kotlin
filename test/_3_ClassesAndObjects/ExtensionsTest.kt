@@ -24,4 +24,23 @@ class ExtensionsTest {
         list.swapGeneric(0, 1)
         Assert.assertEquals("B", list[0])
     }
+
+    @Test fun testExtensionFunctionDependOnType() {
+        val a: Super = Sub()
+        Assert.assertEquals("Super", a.getMessage())
+
+        val b: Sub = Sub()
+        Assert.assertEquals("Sub", b.getMessage())
+    }
+
+    @Test fun testExtensionMemberFunction() {
+        val m: Member = Member()
+        Assert.assertEquals("Member", m.getMessage())
+    }
+
+    @Test fun testExtensionMemberFunctionDifferentSignature() {
+        val m: Member2 = Member2()
+        Assert.assertEquals("Member2", m.getMessage())
+        Assert.assertEquals("Extension2", m.getMessage(2))
+    }
 }
