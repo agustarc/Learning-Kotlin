@@ -51,3 +51,17 @@ class Member2 {
 }
 
 fun Member2.getMessage(i: Int) = "Extension" + i
+
+
+// Note that extensions can be defined with a nullable receiver type.
+// Such extensions can be called on an object variable even if its value is null,
+// and can check for this == null inside the body.
+// This is what allows you to call toString()
+// in Kotlin without checking for null: the check happens inside the extension function.
+fun Any?.toString(): String {
+    if (this == null) {
+        return "isNull"
+    }
+
+    return toString()
+}

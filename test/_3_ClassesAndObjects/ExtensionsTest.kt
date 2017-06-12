@@ -43,4 +43,9 @@ class ExtensionsTest {
         Assert.assertEquals("Member2", m.getMessage())
         Assert.assertEquals("Extension2", m.getMessage(2))
     }
+
+    @Test fun testNullReceiver() {
+        val a: Any? = null
+        Assert.assertEquals("isNull", a.toString())
+    }
 }
