@@ -29,4 +29,22 @@ fun justAnObjectCallSum(p1: Int, p2: Int): Int {
     return adHoc.sum()
 }
 
+@Suppress("unused")
+class AnonymousAccess {
+    // Private function, so the return type is the anonymous object type
+    private fun privateFunc() = object {
+        val x: String = "private"
+    }
+
+    // Public function, so the return type is Any
+    fun publicFunc() = object {
+        val x: String = "public"
+    }
+
+    fun access() {
+        privateFunc().x
+//      publicFunc().x Unresolved reference 'x'
+    }
+}
+
 
